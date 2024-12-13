@@ -1,0 +1,73 @@
+.home {
+  @apply py-[108px] bg-[url('./logIn.png')] bg-center bg-cover bg-no-repeat xl:bg-none;
+}
+.home .wrap {
+  @apply flex justify-center xl:justify-between items-center gap-10;
+}
+.wrap .contents-- {
+  @apply w-full sm:w-[480px] xl:w-[640px] bg-[rgba(255,255,255,0.9)] p-10 xl:p-0 shadow-xl xl:shadow-none rounded-lg;
+}
+.contents-- h2 {
+  @apply font-Overpass font-extrabold text-[36px] text-[#444B59] mb-2 xl:mb-5;
+}
+.contents-- .singUp {
+  @apply font-Nunito font-normal text-[#444B59] mb-10 xl:mb-[64px] text-[24px];
+}
+.contents-- .logIn {
+  @apply mb-10;
+}
+.userName_password label {
+  @apply block font-Nunito font-semibold text-[28px] text-[#444B59] mb-2 xl:mb-4;
+}
+.userName_password input {
+  @apply w-full rounded-[80px] font-Nunito font-normal text-[#C8D3F9] text-[24px] outline-0 mb-9 py-[10px] pl-7 xl:py-[22px] xl:pl-[30px];
+  border: 2px solid #789ade;
+}
+.userName_password input::placeholder {
+  @apply text-[#C8D3F9];
+}
+.logIn .forgetPass {
+  @apply flex justify-between items-center mb-[55px];
+}
+.forgetPass p {
+  @apply font-Nunito font-normal text-[20px] text-[#8699DA] flex items-center gap-4 cursor-pointer transition-all;
+}
+.forgetPass p:hover {
+  @apply text-[#444B59];
+}
+.forgetPass p .checkBox {
+  @apply w-12 h-12 bg-transparent rounded-full flex justify-center items-center;
+  border: 2px solid #9eb0ea;
+}
+.checkBox .miniBox {
+  @apply w-[29.14px] h-[29.14px] bg-[#9EB0EA] rounded-full;
+}
+.forgetPass .forget {
+  @apply font-Nunito font-normal text-[20px] text-[#8699DA] transition-all;
+}
+.forgetPass .forget:hover {
+  @apply text-[#444B59];
+}
+.logIn button {
+  @apply font-Nunito font-extrabold text-[28px] text-white bg-[#8699DA] w-full pt-6 pb-[18px] rounded-[80px] transition-all;
+  box-shadow: inset 0px 4px 12px 0 rgba(200, 210, 249, 0.6);
+}
+.logIn button:hover {
+  box-shadow: 4px 8px 12px 0 rgba(78, 99, 141, 0.06);
+}
+.contents-- h4 {
+  @apply font-Nunito font-normal text-[20px] text-[#444B59] text-center relative after:content-[""] after:absolute after:w-[144px] after:h-[2px] after:bg-[#C8D3F9] z-10 after:-z-10 before:-z-10 after:top-[50%] after:right-[66px] after:translate-y-[-50%] before:absolute before:content-[""] before:w-[144px] before:h-[2px] before:bg-[#C8D3F9] before:top-[50%] before:translate-y-[-50%] before:left-[66px] mb-4;
+}
+.contents-- h4 span {
+  @apply bg-white p-2;
+}
+.contents-- .socialIcon {
+  @apply text-center flex gap-[60px] justify-center;
+}
+.socialIcon a {
+  @apply w-[116px] h-[76px] border-2 border-solid border-[#789ADE] text-5xl flex justify-center items-center rounded-[8px];
+}
+
+.wrap .images {
+  @apply hidden xl:block w-[960px];
+}
